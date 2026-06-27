@@ -1,0 +1,95 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Geometry and Margins ---
+\usepackage{geometry}
+\geometry{
+    left=2.5cm,
+    right=2.5cm,
+    top=3cm,
+    bottom=3cm
+}
+
+% --- Fonts and Symbols ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{fontawesome5} % For icons
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+% --- Layout and Styling ---
+\usepackage{titlesec}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=teal,
+    urlcolor=blue
+}
+
+% --- Section Formatting ---
+% To mimic the reference style: simple, sans-serif, with a horizontal line below
+\titleformat{\section}{\large\sffamily\bfseries}{}{0em}{}[\vspace{-0.5em}\rule{\textwidth}{0.4pt}]
+\titlespacing{\section}{0pt}{2em}{1em}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+
+\begin{document}
+\thispagestyle{empty}
+
+% --- Header ---
+{\sffamily
+\Large PhD position \\[0.5em]
+\huge \textbf{Theoretical and practical aspects in  discrete generative modeling} \\[0.5em]
+\Large \faMapMarker* Institut Camille Jordan $\cdot$ INSA Lyon $\cdot$ France
+}
+\vspace{1.5em}
+
+We invite applications for a fully financed PhD position at the Institut Camille Jordan, INSA Lyon (Lyon, France), with earliest starting date october 2026.
+
+% --- Project Description ---
+\section*{Project description}
+
+The PhD project focuses on the theoretical foundations and algorithmic design of discrete generative models, situated at the intersection of stochastic processes, probability theory, and machine learning.
+
+The PhD candidate will investigate continuous-time Markov chains (CTMCs) and jump-diffusion processes for generative tasks. A core objective is to overcome the ``factorization trap'' present in current discrete flow matching models by exploring alternative combinatorial and geometric structures. The candidate will work both on the theoretical aspects and on the implementation of novel architectures, including hybrid jump-diffusion flows in token embedding spaces.
+
+% --- Candidate Profile ---
+\section*{Candidate profile}
+
+We are looking for a highly motivated candidate with:
+\begin{itemize}[label={-}, leftmargin=*]
+    \item A Master's degree in Mathematics, Computer Science, or a closely related field.
+    \item A strong background in probability theory and stochastic processes is a plus.
+    \item Interest in the mathematics of machine learning and generative modeling.
+    \item Programming experience; knowledge of Python and frameworks such as PyTorch is a plus.
+\end{itemize}
+
+% --- How to apply ---
+\section*{How to apply}
+
+Interested candidates should send the following documents:
+\begin{itemize}[label={-}, leftmargin=*]
+    \item CV (including contact details of references)
+    \item academic transcripts
+    \item a statement describing interest and relevant experience
+\end{itemize}
+
+\vspace{0.5em}
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!40!white, arc=3mm, boxrule=0.5pt, left=10pt, top=6pt, bottom=6pt]
+\sffamily
+Applications and informal inquiries can be sent to: \\
+Christian Wald (\faEnvelope\ \href{mailto:christian.wald@insa-lyon.fr}{christian.wald@insa-lyon.fr})
+\end{tcolorbox}
+
+% --- Important dates ---
+\section*{Important dates}
+
+\begin{itemize}[label={-}, leftmargin=*]
+    \item Earliest starting date: October 2026
+\end{itemize}
+
+\end{document}
